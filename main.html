@@ -1,27 +1,87 @@
-<!-- Button to open modal -->
-<button id="open-modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newton-modal">
-    Open Modal
-</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Assignment</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Carousel slide styles */
+    .first-slide { background-color: lightcoral; height: 300px; display:flex; justify-content:center; align-items:center; color:white; font-size:24px; }
+    .second-slide { background-color: lightblue; height: 300px; display:flex; justify-content:center; align-items:center; color:white; font-size:24px; }
+    .third-slide { background-color: lightgreen; height: 300px; display:flex; justify-content:center; align-items:center; color:white; font-size:24px; }
+    .fourth-slide { background-color: lightpink; height: 300px; display:flex; justify-content:center; align-items:center; color:white; font-size:24px; }
+    .fifth-slide { background-color: lightgoldenrodyellow; height: 300px; display:flex; justify-content:center; align-items:center; color:black; font-size:24px; }
+  </style>
+</head>
+<body class="p-5">
 
-<!-- Modal Structure -->
-<div class="modal fade" id="newton-modal" tabindex="-1" aria-labelledby="newtonModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title" id="newtonModalLabel">New Modal</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-
+  <!-- =================== Buttons Section =================== -->
+  <div class="mb-5">
+    <h2>Bootstrap Buttons</h2>
+    <div class="d-flex flex-wrap gap-2">
+      <button id="button-1" class="btn btn-primary">Primary</button>
+      <button id="button-2" class="btn btn-outline-secondary">Secondary</button>
+      <button id="button-3" class="btn btn-success btn-lg">Success Large</button>
+      <button id="button-4" class="btn btn-danger btn-sm">Danger Small</button>
+      <button id="button-5" class="btn btn-warning btn-lg vw-100">Warning Full Width</button>
+      <button id="button-6" class="btn btn-info disabled" disabled>Disabled Info</button>
+      <button id="button-7" class="btn btn-light">Light</button>
+      <button id="button-8" class="btn btn-link">Link Button</button>
     </div>
   </div>
-</div>
+
+  <!-- =================== Carousel Section =================== -->
+  <div class="mb-5">
+    <h2>Bootstrap Carousel</h2>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item first-slide">First Slide</div>
+        <div class="carousel-item second-slide">Second Slide</div>
+        <div class="carousel-item third-slide active">Third Slide</div>
+        <div class="carousel-item fourth-slide">Fourth Slide</div>
+        <div class="carousel-item fifth-slide">Fifth Slide</div>
+      </div>
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- =================== Modal Section =================== -->
+  <div>
+    <h2>Bootstrap Modal</h2>
+    <!-- Button to open modal -->
+    <button id="open-modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newton-modal">
+      Open Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="newton-modal" tabindex="-1" aria-labelledby="newtonModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newtonModalLabel">New Modal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
